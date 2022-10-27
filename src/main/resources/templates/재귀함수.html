@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>재귀함수</title>
+</head>
+<body>
+<script>
+  function isEven(number){
+    if(number % 2 > 2){
+      isEven(number / 2);
+    }else if(number % 2 === 0){
+      console.log('짝수')
+    }else if(number % 2 === 1){
+      console.log('홀수')
+    }else{
+      console.log('양수가 아닙니다.')
+    }
+  }
+  isEven(50)
+  isEven(75)
+  isEven(-1)
+</script>
+</body>
+</html>
